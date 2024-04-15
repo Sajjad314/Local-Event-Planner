@@ -14,7 +14,7 @@ const Home = () => {
   const [eventListApi, setEventListApi] = useState<EventResponse[]>([]);
   const [searchText, setSearchText] = useState<string>("");
   const [selectedDate, setSelectedDate] = useState<Date>();
-  const [selectedLocation, setSelectedLocation] = useState<string>("");
+  const [selectedLocation] = useState<string>("");
   const [locations, setLocations] = useState<string[]>([]);
   const navigate = useNavigate();
   const dispatch = useDispatch();
