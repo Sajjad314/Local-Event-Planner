@@ -24,7 +24,11 @@ export const eventSlicer = createSlice({
         (state.type = action.payload.type);
     },
     removeEvent: (state) => {
-      state = initialState;
+      (state.date = initialState.date),
+        (state.description = initialState.description),
+        (state.location = initialState.location),
+        (state.time = initialState.time),
+        (state.title = initialState.title);
     },
   },
 });
